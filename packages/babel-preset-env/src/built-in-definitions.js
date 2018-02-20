@@ -114,6 +114,11 @@ export const definitions = {
       MAX_SAFE_INTEGER: "es6.number.max-safe-integer",
     },
 
+    Promise: {
+      // https://github.com/babel/babel/issues/7395
+      all: ["es6.array.iterator"],
+    },
+
     Reflect: {
       apply: "es6.reflect.apply",
       construct: "es6.reflect.construct",
